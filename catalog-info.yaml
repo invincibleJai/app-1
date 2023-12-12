@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: backstage-demo
+  name: devnation-demo
   labels: 
     component: backstage-workloads
   annotations:
@@ -12,9 +12,8 @@ metadata:
     janus-idp.io/tekton-enabled: 'true'
     janus-idp.io/tekton: test-backstage
     backstage.io/techdocs-ref: dir:.
-    'jfrog-artifactory/image-name': 'test'
-    nexus-repository-manager/docker.image-name: sonatype/nexus3
 spec:
   type: service
-  lifecycle: unknown
+  lifecycle: production
+  system: system:default/janus-idp
   owner: user:default/invinciblejai
