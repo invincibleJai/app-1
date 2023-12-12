@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: devnation-demo
+  name: backstage-showcase-demo
   labels: 
     component: backstage-workloads
   annotations:
